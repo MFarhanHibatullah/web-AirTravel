@@ -1,29 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traveling</title>
-    <link rel="stylesheet" href="latihan.css">
+    <title>Pemesanan Tiket Pesawat</title>
     <style>
-      
+        
+        .container {
+            max-width: 89%;
+            margin: 50px;
+            background: #fffcfc;
+            padding: 20px;
+            box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+        }
+        .aa[type="text"], input[type="date"], select {
+            width: 97%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 10%;
+            padding: 10px;
+            background-color: #19485f;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+              
+        }
+        .pp{
+            width: 91%;
+            padding: 50px;
+            margin-bottom: 15px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .header{
+            background-color: #ffffff;
+            
+            text-align: center;
+            max-width: 90%;
+            margin: 50px;
+        }
+        .footer{
+            background-color: #25759c;
+          
+            padding: 1px;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            max-width:100% ;
+            margin: 50px;
+}
+        .menu ul{
+            padding: 10px;
+            background-color: #19485F;
+            width: 100%;
+        }
+        .menu ul li{
+            display: inline-block;
+        }
+        .menu ul li a{
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            border-radius: 200px;
+            box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
+        }
+        .menu li a:hover{
+        color: #7DA0CA;
+        }
+       .logo img{
+             width: 250px;
+        }
+        .thumbnail img{
+             width: 100%;
+        }
+        .tombol{
+    border-radius: 5px;
+    background-color: #25759c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.tombol:hover{
+    border-radius: 10px;
+    background-color: white;
+    color: #25759c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-color: #25759c;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 15px 15px #25759c;
+    transition: all 700ms ease-in-out;
+}
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-          <div class="logo">
-            <img src="tgs.jpg" alt="">
-          </div> 
-          <div class="menu">
-            <ul>
-                <li><a href="beranda.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang Kami</a></li>
-                <li><a href="transportasi.html">Transportasi</a></li>
-                <li><a href="tujuan.html">Tujuan Wisata</a></li>
-                <li><a href="pemesanan.html">Pemesanan</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-          </div>
+  
+    <div class="header">
+        <div class="logo">
+          <img src= "tgs.jpg" alt="">
+        </div> 
+        <div class="menu">
+          <ul>
+              <li class=""><a href="index.html">Beranda</a></li>
+              <li class=""><a href="tentang.html">Tentang Kami</a></li>
+              <li class=""><a href="transportasi.html">Transportasi</a></li>
+              <li class=""><a href="tujuan.html">Tujuan Wisata</a></li>
+              <li class=""><a href="pemesanan.html">Pemesanan</a></li>
+              <li class=""><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+  </div>
+  <div class="container">
+    <h3>Pemesanan Tiket Pesawat</h3>
+    <form>
+        <label for="from">Dari</label>
+        <input type="text" id="from" name="from" placeholder="Masukkan negara asal">
+
+        <label for="to">&nbsp;Ke</label>
+        <input type="text" id="to" name="to" placeholder="Masukkan negara tujuan"><br><br>
+
+        <label for="departure-date">Tanggal Keberangkatan</label>
+        <input type="date" id="departure-date" name="departure-date">
+
+        <label for="return-date">Tanggal Pulang (Optional)</label>
+        <input type="date" id="return-date" name="return-date">
+
+        <label for="passengers">Jumlah Penumpang</label>
+        <select id="passengers" name="passengers">
+            <option value="1">1 Penumpang</option>
+            <option value="2">2 Penumpang</option>
+            <option value="3">3 Penumpang</option>
+            <option value="4">4 Penumpang</option>
+            <option value="5">5 Penumpang</option>
+        </select>
+
+        <label for="class">Kelas Penerbangan</label>
+        <select id="class" name="class">
+            <option value="economy">Ekonomi</option>
+            <option value="business">Bisnis</option>
+            <option value="first">First Class</option>
+        </select>
+
+        <button class="tombol"><a href=""></a>Pesan</button>
+    </form>
+</div>
+
+    <div class="footer">
+        <p>Hak Cipta © 2024.Air Travel</p>
+    </div>
+    
 </body>
 </html>

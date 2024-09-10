@@ -7,10 +7,11 @@
     <style>
         
         .container {
-            max-width: 89%;
-            margin: 50px;
+            max-width: 700px;
+            margin: 50px auto;
             background: #fffcfc;
             padding: 20px;
+            border-radius: 10px;
             box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
         }
         .aa[type="text"], input[type="date"], select {
@@ -32,7 +33,7 @@
               
         }
         .pp{
-            width: 91%;
+            width: 85%;
             padding: 50px;
             margin-bottom: 15px;
             border: 1px solid #aaa;
@@ -41,20 +42,16 @@
         }
         .header{
             background-color: #ffffff;
-            
+            min-height: 50px;
             text-align: center;
-            max-width: 90%;
-            margin: 50px;
         }
         .footer{
-            background-color: #25759c;
-          
-            padding: 1px;
-            text-align: center;
-            font-size: 15px;
-            color: white;
-            max-width:100% ;
-            margin: 50px;
+   background-color: #19485F;
+   min-width: 15px;
+   padding: 1px;
+   text-align: center;
+   font-size: 15px;
+   color: white;
 }
         .menu ul{
             padding: 10px;
@@ -69,11 +66,10 @@
             text-decoration: none;
             color: white;
             border-radius: 200px;
-            box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.1);
         }
         .menu li a:hover{
-        color: #7DA0CA;
-        }
+    color: #7DA0CA;
+}
        .logo img{
              width: 250px;
         }
@@ -121,25 +117,24 @@
     <div class="container">
         <h3>Kontak Kami</h3>
         <form>
-            <label for="from">Nama Depan</label>
-            <input type="text" id="to" name="to" placeholder="Masukan Nama Depan" class="aa">
-
-            <label for="from">Nama Belakang</label>
-            <input type="text" id="to" name="to" placeholder="Masukan Nama Belakang" class="aa">
-
-            <label for="from">Telepon</label>
-            <input type="text" id="to" name="to" placeholder="Masukan No Telepon" class="aa">
+            <label for="from">Nama</label>
+            <input type="text" id="to" name="to" placeholder="Masukan Nama" class="aa">
 
             <label for="to">Email</label>
             <input type="text" id="to" name="to" placeholder="Masukan Email" class="aa">
 
+            <label for="to">No.Hp</label>
+            <input type="text" id="to" name="to" placeholder="Masukan Nomor Telepon" class="aa">
+
             <label for="to">Pesan</label>
             <input type="text" id="to" name="to" placeholder="Masukan Saran" class="pp">
             
-            <button class="tombol"><a href=""></a>Kirim Pesan</button>
+            <button class="tombol"><a href=""></a>Kirim</button>
         
         </form>
     </div>
+
+    
     <div class="footer">
         <p>Hak Cipta © 2024.Air Travel</p>
     </div>
